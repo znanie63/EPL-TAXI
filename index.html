@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="https://firebasestorage.googleapis.com/v0/b/propark-e07d5.appspot.com/o/app%2Ficons%2Fic.jpg?alt=media&token=79d43b9a-d345-479b-a433-bfac437745f7" />
+    <link rel="apple-touch-icon" href="https://firebasestorage.googleapis.com/v0/b/propark-e07d5.appspot.com/o/app%2Ficons%2Fic.jpg?alt=media&token=79d43b9a-d345-479b-a433-bfac437745f7" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>&#128661; ProPark – система управления таксопарком</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            .then(registration => {
+              console.log('ServiceWorker registration successful');
+            })
+            .catch(err => {
+              console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "ProPark – система управления таксопарком",
+  "short_name": "ProPark",
+  "description": "Система управления таксопарком",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/propark-e07d5.appspot.com/o/app%2Ficons%2Fic.jpg?alt=media&token=79d43b9a-d345-479b-a433-bfac437745f7",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://firebasestorage.googleapis.com/v0/b/propark-e07d5.appspot.com/o/app%2Ficons%2Fic.jpg?alt=media&token=79d43b9a-d345-479b-a433-bfac437745f7", 
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

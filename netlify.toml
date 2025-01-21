@@ -1,0 +1,25 @@
+# Настройки сборки
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Правила заголовков для Service Worker
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Content-Type = "text/javascript"
+    Cache-Control = "no-cache"
+    Service-Worker-Allowed = "/"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/manifest.json"
+  [headers.values]
+    Content-Type = "application/json"
+    Cache-Control = "no-cache"
+    Access-Control-Allow-Origin = "*"
+
+# Правила для всех файлов
+[[headers]]
+  for = "/*"
+  [headers.values]
